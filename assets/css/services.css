@@ -1,0 +1,442 @@
+
+
+:root{
+    --wdtSecondaryColorRgb: 61, 61, 61;
+}
+
+
+.banner-container {
+    background: linear-gradient( #f9f9f9, #e5e5e5);
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stare;
+}
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    /* margin: 0 0 20px 0;   */
+    color: #111;
+}
+
+.breadcrumb {
+    font-size: 16px;
+}
+.breadcrumb a {
+    
+    color: #777;
+    margin-left: 5px;
+}
+.breadcrumb a:hover{
+    color: #df4f4f;
+}
+.breadcrumb span {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/* ////////////Banner/////////////////////// */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 20px; */
+    background: #fff;
+    /* padding: 30px; */
+    /* margin: 50px auto; */
+    flex-wrap: wrap; /* Ensures wrapping if screen is small */
+}
+
+.svgfile svg {
+    width: 80px;
+    height: 80px;
+    color: #0077ff; /* SVG stroke color */
+    flex-shrink: 0;
+    margin-left: 25%;
+}
+
+.text-wrapper {
+    flex: 1;
+    padding-left: 20px; /* Same spacing between icon and text */
+}
+
+.headingtext h1 {
+    font-size: 50px;
+    /* margin: 0 0 15px 0; */
+    color: #df4f4f;
+    /* margin-left: 10%; */
+}
+
+.smalltext p {
+    font-size: 20px;
+    color: #7e7a7a;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .headingtext h1 {
+        font-size: 40px;
+    }
+    .smalltext p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .text-wrapper {
+        padding-left: 0;
+    }
+    .headingtext h1 {
+        font-size: 32px;
+    }
+    .smalltext p {
+        font-size: 16px;
+    }
+}
+/* ------------------------------------------------------------------------------------------ */
+
+.innovative {
+    margin: 20px;
+    min-height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.innovative .icon {
+    flex-shrink: 0;
+}
+
+.big-text h1{
+    color: #df4d4d;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.small-text {
+    color: gray;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+    .innovative {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+    .big-text {
+        font-size: 36px;
+    }
+    .small-text {
+        font-size: 18px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+    .big-text {
+        font-size: 28px;
+    }
+    .small-text {
+        font-size: 16px;
+    }
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* ``````````````````````````````````service banner ````````````````````````````````````````````````` */
+
+.services{
+    display: flex;
+    justify-content: center;
+}
+
+.service{
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service .image-container {
+    position: relative;
+    overflow: hidden;
+
+}
+.image-container img{
+    width: 100%;
+}
+
+.service .overlay{
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.632); 
+}
+
+.service .image-container:hover>img,
+.service .image-container:focus>img,
+.service .image-container:active>img  {
+    transform: scale(1.2);
+    transition: transform .5s ease-in-out;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.632); 
+
+}
+
+.service .image-container:hover > .overlay,
+.service .image-container:focus> .overlay,
+.service .image-container:active> .overlay 
+{
+    opacity: 1;
+    height: 20%;
+    transition: opacity .5s ease-in-out, height .5s ease-in-out;
+}
+
+
+.service .overlay .read-more{
+    display: inline-flex;
+    align-items: center;
+}
+
+.service .overlay .read-more a {
+    color:white;
+    font-size: 1rem;
+}
+
+.service .overlay .read-more .line{
+    border: 2px solid white;
+
+}
+
+.service h2{
+    margin-top: 2rem;
+    font-weight: 900;
+}
+
+.service p{
+    margin-top: 1rem;
+    color: #777777;
+}
+
+
+
+
+
+/* ``````````````````````````````````service banner````````````````````````````````````````````````` */
+
+
+
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .half-width-image {
+      flex: 1 1 100%;
+    }
+    .read-btn {
+      font-size: 14px;
+      padding: 6px 16px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .read-btn {
+      font-size: 12px;
+      padding: 5px 14px;
+    }
+    .read-btn span {
+      width: 20px;
+    }
+  }
+  
+  .B:hover{
+    color: #df4d4d;
+
+  }
+
+  @media (max-width:768px){
+    .service{
+        padding-top: 3rem;
+    }
+  }
+
+
+  /* ````````````````````````````````````````modals starts here ````````````````````````````````````````````````````````````````````` */
+  
+  .modal {
+    position: fixed;
+    top: 0%;
+    left:0%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+    background:none;
+    display: none;
+    z-index: 10000;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    overflow: visible;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .modal-content {
+    background: #000000a5;
+
+    padding: 10%;
+    height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    border: none;
+    /* Firefox scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f0f0f0;
+  }
+  
+  /* Chrome, Edge, Safari scrollbar */
+  .modal-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .modal-content::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .modal-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+    border: 2px solid #f0f0f0;
+  }
+  
+  .modal-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  .project {
+    position: relative;
+    background: #dd4545;
+    margin-bottom: 40px;
+    border: 2px solid black;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  .project:hover> .iframe-overlay,
+  .project:active> .iframe-overlay,
+  .project:focus> .iframe-overlay
+  {
+    display: block;
+  }
+
+  .iframe-overlay{
+    display: none;
+    position: absolute;
+    z-index: 1000000;
+    background: #dd4545;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
+    border-top-left-radius: 10px;
+    font-weight: bolder;
+  }
+  
+  .project iframe {
+    width: 100%;
+    height: 90vh;
+    border: none;
+    background:none;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  /* Close button */
+  .cross-btn {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    z-index: 110000;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0.43);
+    color: #777777 !important;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .body-cover {
+    overflow: hidden; /* Prevent background scroll */
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .modal {
+     
+    }
+  
+    .project iframe {
+      height: 60vh;
+    }
+    .iframe-overlay{
+        display: none;
+        position: absolute;
+        z-index: 1000000;
+        background: #dd4545;
+        bottom: 50%;
+        right: 50%;
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
+        font-weight: bolder;
+        transform: translateX(50%);
+      }
+      .modal-content{
+        padding: 10% 2%;
+      }
+  }
+  
+  
+  /* ````````````````````````````````````````modals end here ````````````````````````````````````````````````````````````````````` */

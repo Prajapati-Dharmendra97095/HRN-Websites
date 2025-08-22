@@ -1,0 +1,577 @@
+:root {
+  --wdtSecondaryColorRgb: 61, 61, 61;
+}
+
+.banner-container {
+  background: linear-gradient( #f9f9f9, #e5e5e5);
+  height:30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stare;
+}
+.heading-wrapper {
+  font-size: 60px;
+  font-weight: bold;
+  /* margin: 50px 40px 0 0;   */
+  color: #df4d4d;
+}
+
+.breadcrumb {
+  font-size: 16px;
+}
+.breadcrumb a {
+  
+  color: #777;
+  margin-left: 5px;
+}
+.breadcrumb a:hover {
+  color: #df4f4f;
+}
+.breadcrumb span {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+
+/* ////////////Banner/////////////////////// */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 20px; */
+  background: #fff;
+  /* padding: 30px; */
+  /* margin: 50px auto; */
+  flex-wrap: wrap; /* Ensures wrapping if screen is small */
+}
+
+.svgfile svg {
+  width: 80px;
+  height: 80px;
+  color: #0077ff; /* SVG stroke color */
+  flex-shrink: 0;
+  margin-left: 25%;
+}
+
+.text-wrapper {
+  flex: 1;
+  padding-left: 20px; /* Same spacing between icon and text */
+}
+
+.headingtext h1 {
+  font-size: 50px;
+  /* margin: 0 0 15px 0; */
+  color: #df4f4f;
+  /* margin-left: 10%; */
+}
+
+.smalltext p {
+  font-size: 20px;
+  color: #7e7a7a;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .headingtext h1 {
+    font-size: 40px;
+  }
+  .smalltext p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .text-wrapper {
+    padding-left: 0;
+  }
+  .headingtext h1 {
+    font-size: 32px;
+  }
+  .smalltext p {
+    font-size: 16px;
+  }
+}
+/* ------------------------------------------------------------------------------------------ */
+
+.innovative {
+  margin: 20px;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.innovative .icon {
+  flex-shrink: 0;
+}
+
+.big-text h1 {
+  color: #df4d4d;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.small-text {
+  color: gray;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+/* section{
+    padding: 7rem 0rem ;
+} */
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .innovative {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+  .big-text {
+    font-size: 36px;
+  }
+  .small-text {
+    font-size: 18px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+  .big-text {
+    font-size: 28px;
+  }
+  .small-text {
+    font-size: 16px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+.caption-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.line {
+  border: 1px solid var(--bs-secondary);
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+}
+
+.dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background: var(--bs-danger);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.caption-container .caption {
+  font-size: 2.5rem;
+  color: var(--bs-secondary);
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.our-product .projectImage {
+  position: relative;
+  overflow: hidden;
+}
+
+.our-product .projectImage .overlay {
+  position: absolute;
+  color: white;
+  top: 100%;
+  padding: 1rem;
+}
+
+.our-product .projectImage:hover > .overlay,
+.our-product .projectImage:active > .overlay,
+.our-product .projectImage:focus > .overlay {
+  top: 80%;
+  left: 0;
+  background: #4f4f4f9f;
+  width: 100%;
+  height: 70%;
+  z-index: 1;
+  transform: translateY(-70%);
+
+  /* Add a smooth transition */
+  transition: transform 0.5s ease-in-out;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+}
+
+.read-more .line {
+  width: 30px;
+  border: 2px solid var(--bs-primary);
+}
+
+.our-product .overlay .read-more .line {
+  border-color: white;
+}
+
+.our-product .read-more a {
+  color: white;
+  outline: none;
+  text-decoration: none;
+}
+
+.read-more:hover > a,
+.read-more:focus > a,
+.read-more:active > a {
+  color: var(--bs-danger);
+  font-weight: 600;
+}
+
+.read-more:hover > .line,
+.read-more:active > .line,
+.read-more:focus > .line {
+  width: 0;
+  height: 0;
+  border: none;
+  transition: width 0.5s ease-in-out;
+}
+
+.our-product .overlay .read-more:hover > .dot,
+.our-product .overlay .read-more:active > .dot,
+.our-product .overlay .read-more:focus > .dot {
+  background: white;
+}
+
+.line2 {
+  width: 0;
+}
+
+.read-more:hover > .line2,
+.read-more:focus > .line2,
+.read-more:active > .line2 {
+  border: 2px solid var(--bs-danger);
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  transition: width 0.5s ease-in-out;
+}
+
+.our-product .card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  z-index: 0;
+  border: none;
+}
+
+.our-product .card h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+}
+.our-product .card .circle {
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+  border-radius: 0100%;
+  background: var(--bs-danger);
+  z-index: -1;
+}
+
+.our-product .card .card-heading-container h1 {
+  margin-left: 20px;
+}
+
+.read-more a,
+.card .read-more a {
+  color: var(--bs-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+.our-product .card .read-more:hover > .card .dot,
+.our-product .card .read-more:focus > .card .dot,
+.our-product .card .read-more:active > .card .dot {
+  background: var(--bs-primary);
+}
+
+.our-product .card .read-more:hover > .line,
+.our-product .card .read-more:focus > .line,
+.our-product .card .read-more:active > .line {
+  width: 0;
+  height: 0;
+  border: none;
+  transition: width 0.5s ease-in-out;
+}
+
+.our-product .card .read-more:focus > .line2,
+.our-product .card .read-more:active > .line2,
+.our-product .card .read-more:hover > .line2 {
+  border: 1px solid var(--bs-primary);
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  transition: width 0.5s ease-in-out;
+}
+
+@media (max-width: 390px) {
+  .our-product .card .card-heading-container h1 {
+    font-size: 2rem;
+  }
+  .our-product .card .circle {
+    display: inline-block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    left: 0px;
+    border-radius: 100%;
+    background: var(--bs-danger);
+    z-index: -1;
+  }
+}
+
+/* Feature Card and Icon Styling */
+.feature-card {
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.feature-card .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-card .icon {
+  font-size: 5rem; /* Adjust icon size to match original */
+  transition: transform 0.3s ease-in-out;
+  color: var(--bs-danger);
+}
+
+/* Apply the animation on hover */
+.feature-card:hover .icon-container {
+  animation: pulse 1s ease-in-out infinite;
+}
+.footer-list li {
+  line-height: 40px;
+}
+
+.newsletter-form input {
+  width: 50%;
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 2.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.group input {
+  height: 0;
+  width: 100%;
+  max-width: 15rem;
+  padding: 0 0.125rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.group:hover input,
+.group:focus-within input,
+.group:active input {
+  height: 2rem;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bg-circle {
+  position: absolute;
+  left: 0.5rem; /* adjust for button position */
+  z-index: 0;
+  width: 1rem;
+  height: 1rem;
+  background: #dd4242;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.group:hover .bg-circle,
+.group:focus-within .bg-circle,
+.group:active .bg-circle {
+  top: 0;
+  width: 10rem;
+  height: 2.5rem;
+}
+
+.btn-wrapper button {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  padding-left: 1.7rem;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.group:hover button,
+.group:focus-within button {
+  color: white;
+}
+
+@media (max-width: 408px) {
+  .btn-wrapper {
+    margin-top: 10px;
+  }
+}
+
+/* ------------------------------------Form----------------------------------- */
+
+.form-container {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.caption-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.line {
+  width: 40px;
+  height: 1 px;
+  background: #888;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+.caption {
+  font-size: 18px;
+  color: #666;
+}
+.heading-wrapper {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 8px 0;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+.contact-form textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 80px;
+}
+.full-width {
+  grid-column: span 2;
+}
+.contact-form .submit-button {
+  grid-column: span 2;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 1px solid #000;
+  background: transparent;
+  width: 130px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contact-form .submit-button .dot {
+  background: #dd4545;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* -------------------------------Branches------------------------------------ */
+
+
+.branches h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.branches p {
+  color: #666;
+  font-size: 16px;
+  margin: 10px 0 40px;
+}
+.branches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.branch-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: left;
+  background: white;
+}
+.branch-card h3 {
+  color: #e53935;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.branch-card p {
+  margin: 5px 0;
+  color: #111;
+}
