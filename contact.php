@@ -13,16 +13,13 @@
 </head>
 
 <body>
-<?php
-    if(isset($_GET['status']) && $_GET['status']==='success')
-        {   
-            echo "<script>alert('Form Submit successfully')</script>";
-        }
-        elseif(isset($_GET['status']) && $_GET['status']==='false')
-        {
-            echo "<script>alert('There has been some error please retry after some time')</script>";
-        }
-?>
+    <?php
+    if (isset($_GET['status']) && $_GET['status'] === 'success') {
+        echo "<script>alert('Form Submit successfully')</script>";
+    } elseif (isset($_GET['status']) && $_GET['status'] === 'false') {
+        echo "<script>alert('There has been some error please retry after some time')</script>";
+    }
+    ?>
     <main class="wrapper">
         <?php include 'header.php' ?>
         <div class="container-fluid banner-container">
@@ -222,15 +219,15 @@
         <!-- /////////////////////////////////////  Card  /////////////////////////////// -->
 
         <section class="container form-container">
-                <div class="row">
-                    <div class="col caption-container">
-                        <span class="line"></span>
-                        <span class="dot"></span>
-                        <h3 class="caption">Get In Touch</h3>
-                        <span class="dot"></span>
-                        <span class="line"></span>
-                    </div>
+            <div class="row">
+                <div class="col caption-container">
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                    <h3 class="caption">Get In Touch</h3>
+                    <span class="dot"></span>
+                    <span class="line"></span>
                 </div>
+            </div>
             <h1 class="heading-wrapper">Reach Out To Us</h1>
 
             <form action="form.php" class="contact-form">
@@ -247,8 +244,12 @@
         </section>
 
         <!-- ///////////////////////////////////////////Branches/////////////////////////////////// -->
+        <div class="container-fluid">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.539593014628!2d77.315106!3d28.583585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce51ee5d79db7%3A0x685544a078523ffb!2sHRN%20Tech%20Solutions!5e0!3m2!1sen!2sin!4v1756100513176!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
 
-        <section class="Branches">
+        <!-- <section class="Branches">
             <div class="container-fluid">
                 <h1>Our Affiliate Branches</h1>
                 <p>Et tortor consequat id porta nibh venenatis cras sed felis. Pharetra diam sit amet nisl suscipit. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Volutpat blandit aliquam etiam velit sceleris.</p>
@@ -280,7 +281,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <?php include 'footer.php' ?>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -1,4 +1,4 @@
-<footer class="pt-5 bg-white overflow-hidden">
+<footer class="pt-10 bg-white overflow-hidden">
     <div class="container-fluid">
         <div class="row">
 
@@ -7,9 +7,9 @@
                     <img src="assets/images/logo/logo.png" alt="HRN Tech Solutions" class="img-fluid" style="">
                 </div>
                 <p class="text-secondary my-4">
-                    HRN Tech Solutions is a full-service digital agency helping brands grow in the digital space. 
-                    We specialize in crafting innovative websites, impactful marketing campaigns, and user-centric 
-                    digital solutions to drive measurable business results.
+                    HRN Tech Solutions is a full-service digital agency helping brands <br>grow in the digital space. 
+                    We specialize in crafting innovative websites,<br> impactful marketing campaigns, and user-centric 
+                    digital solutions to <br> drive measurable business results.
                 </p>
                 <div class="subscribe-form">
                     <form id="newsletterForm" class="group flex">

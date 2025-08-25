@@ -55,9 +55,9 @@
 
         <div class="mt-auto pt-4 border-top border-2">
             <div class="d-flex justify-content-center space-x-6">
-                <a href="#" class="text-secondary hover-red mx-3"><i class="fab fa-twitter fa-lg"></i></a>
-                <a href="#" class="text-secondary hover-red mx-3"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="#" class="text-secondary hover-red mx-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://www.facebook.com/p/HRN-Tech-Solutions-100076345801275/" class="text-secondary hover-red mx-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://www.instagram.com/hrntechsolutions/" class="text-secondary hover-red mx-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.linkedin.com/company/hrn-tech-solutions/?originalSubdomain=in" class="text-secondary hover-red mx-3"><i class="fab fa-linkedin fa-lg"></i></a>
             </div>
         </div>
     </div>

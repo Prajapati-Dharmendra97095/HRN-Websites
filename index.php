@@ -29,10 +29,10 @@
                             <div class="d-flex flex-column align-items-center sm-justify-content-center px-4 px-md-5"
                                 data-aos="fade-right" data-aos-duration="1000">
                                 <div class="d-flex flex-column space-y-12">
-                                    <a href="https://www.linkedin.com/company/hrntechsolutions" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://twitter.com/hrntechsolutions" class="social-icon"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.instagram.com/hrntechsolutions" class="social-icon"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://www.facebook.com/hrntechsolutions" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/company/hrn-tech-solutions/?originalSubdomain=in" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="https://www.instagram.com/hrntechsolutions/reels/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/p/HRN-Tech-Solutions-100076345801275/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                                 </div>
                                 <a class="d-flex flex-column align-items-center d-none d-md-flex mt-5 text-dark text-decoration-none"
                                     href="#features">
